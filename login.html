@@ -1,54 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Form</title>
 
     <style>
-        .right {
-            position: absolute;
-            left: 50%;
-        }
-        .left {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: yellow;
-            width: 50%;
-            height: 100%;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Hammersmith+One&display=swap");
+      .name {
+        font-family: "Hammersmith One", sans-serif;
+        font-size: 150px;
+        margin-top: 75px;
+        margin-bottom: 30px;
+      }
+      .name_text {
+        color: #c02f2f;
 
+        background: linear-gradient(45deg, #c02f2f, #b27277);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      text {
+        border: none;
+        font-size: 50px;
+        color: #b27277;
+        background-color: white;
+        border-radius: 16px;
+      }
+      input {
+        border: none;
+        font-size: 50px;
+        color: #b27277;
+        background-color: white;
+        border-radius: 16px;
+        outline: none;
+        padding: 5px;
+      }
+      ::-webkit-input-placeholder {
+        color: #b27277;
+      }
+      button {
+        border: none;
+        font-size: 50px;
+        color: white;
+        background-color: #b27277;
+        border-radius: 16px;
+        margin-top: 100px;
+        padding: 8px;
+      }
+      h2 {
+        font-family: "Comfortaa", cursive;
+        color: #b27277;
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 150px;
+      }
+
+      .right {
+        position: absolute;
+        left: 50%;
+        width: 50%;
+        text-align: center;
+      }
+      .left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(https://images.unsplash.com/photo-1585647347483-22b66260dfff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        height: 100%;
+      }
+      body {
+        background-color: #ffeced;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="left"></div>
 
-    <div class="left">
-        banner
-    </div>
-    
     <div class="right">
-       <h1>
-           Login
-       </h1>
-
-       <h2>
-           Please enter your credentials
-       </h2>
-
-       <form>
-           <p>
-               <input type="text" placeholder="Your login">
-           </p>
-           <p>
-               <input type="password" placeholder="Your password">
-           </p>
-           <p>
-               <button>Login</button>
-           </p>
-       </form>
+      <h1 class="name">
+        <span class="name_text">KINOIX</span>
+      </h1>
+      <h2>Оформить подписку за 4$</h2>
+      <form>
+        <p>
+          <input type="text" placeholder="Your login" />
+        </p>
+        <p>
+          <input type="password" placeholder="Your password" />
+        </p>
+        <p>
+          <button>Login</button>
+        </p>
+      </form>
     </div>
-
-</body>
+  </body>
 </html>
