@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+      :root {
+        --color-grey: #f6f6f6;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+      html,
+      body,
+      .row {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .row {
+        display: flex;
+        gap: 40px;
+        margin-top: 100px;
+      }
+      .row__small-item {
+        flex: 1;
+      }
+      .icon {
+        background: var(--color-grey);
+        margin: 30px 0;
+        font-size: 35px;
+        padding: 10px;
+        border-radius: 15px;
+      }
+      main {
+        width: 900px;
+      }
+      .row__item {
+        background: var(--color-grey);
+        border-radius: 20px;
+      }
+      img {
+        width: 100%;
+        object-fit: none;
+        aspect-ratio: 1;
+        height: 100%;
+        margin: -36px 0px;
+      }
+      #object-position-1 {
+        object-position: center;
+      }
+      #object-position-2 {
+        object-position: right bottom;
+      }
+      h4 {
+        font-size: 20px;
+        margin: 40px 0px 20px 0;
+        font-weight: 750;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+      }
+      p {
+        font-size: 18px;
+        color: grey;
+        line-height: 25px;
+      }
+      h3 {
+        font-size: 27px;
+        margin-bottom: 15px;
+        font-weight: 750;
+        word-spacing: 3px;
+        letter-spacing: 1px;
+        padding: 35px 30px 0 30px;
+      }
+      .p__item {
+        padding: 0 30px 0 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="row">
+          <div class="row__small-item">
+            <span class="icon">
+              <i class="las la-cube"></i>
+            </span>
+            <h4>400+ Components</h4>
+            <p>
+              The numerous components and variants will allow you to build
+              interfaces of any complexity.
+            </p>
+          </div>
+
+          <div class="row__small-item">
+            <span class="icon">
+              <i class="lab la-buffer"></i>
+            </span>
+            <h4>Layout samples</h4>
+            <p>
+              Get inspiration and kickstart your project with ready-to-use
+              layout samples.
+            </p>
+          </div>
+
+          <div class="row__small-item">
+            <span class="icon">
+              <i class="las la-cloud"></i>
+            </span>
+
+            <h4>Lifetime access</h4>
+
+            <p>
+              Get lifetime access to the Design System and ucoming updates for a
+              simple one-time price.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row__item">
+            <h3>Less clutter, more flexibility</h3>
+            <p class="p__item">
+              Spend more time building your product, rather than focusing on the
+              interface itself.
+            </p>
+            <figure>
+              <img
+                id="object-position-1"
+                src="https://via.placeholder.com/200x250"
+                alt=""
+              />
+            </figure>
+          </div>
+
+          <div class="row__item">
+            <h3>Handcrafted components</h3>
+            <p class="p__item">
+              Customize your design tokens and see changes across your Design
+              System.
+            </p>
+            <figure>
+              <img
+                id="object-position-2"
+                src="https://via.placeholder.com/300x300"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
