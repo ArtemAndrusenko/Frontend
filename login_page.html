@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        :root {
+            --white-color: rgb(228, 228, 228);
+            --black-color: #212121;
+            --lightgrey-color: rgb(161, 161, 161);
+            --grey-color: #606060;
+        }
+        body {
+            display: flex;
+            align-items: center;
+        }
+        html,
+        body,
+        .banner {
+            height: 100%;
+        }
+        .banner {
+            width: 70%;
+            background: url(pavel_durov.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            float: left;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            margin: 0 50px;
+        }
+        img.google {
+            padding: 0;
+            margin: 0;
+            width: 25px;
+            object-fit: cover;
+            
+        }
+        .top {
+            font-size: 75px;
+            color: var(--black-color);
+            margin: 25px 25px 0 25px;
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 40px 30px 40px;
+        }
+        .center {
+            font-size: 60px;
+            margin: -10px 40px 0 40px;
+            color: var(--black-color);
+
+            background: linear-gradient(90deg, var(--black-color), var(--lightgrey-color), var(--black-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        button.arrow {
+            padding: 15px 17px;
+            color: var(--black-color);
+            border-radius: 80%;
+            background: none;
+            margin: 0 20px;
+            border-color: var(--black-color);
+            font-size: 25px;
+            border-style: double;
+        }
+        button.arrow:hover {
+            color: var(--lightgrey-color);
+            border-color: var(--lightgrey-color);
+        }
+        .left {
+            margin-top: -40px;
+            color: var(--black-color );
+        }
+        h3 {
+            font-size: 35px;
+            margin-bottom: 5px;        
+        }
+        h4 {
+            font-size: 25px;
+        }
+        h2 {
+            color: var(--black-color);
+            font-size: 35px;
+            margin-bottom: 13px;
+        }
+        h5 {
+            color: var(--grey-color);
+            font-size: 17px;
+            margin-bottom: 40px;
+        }
+        p.log_in {
+          color: var(--grey-color);  
+          font-size: 15px;
+          text-align: center;
+        }
+        a {
+            color: var(--black-color);
+        }
+        a:hover {
+            color: var(--grey-color);
+        }
+        button.create {
+            color: white;
+            background-color: var(--black-color);
+            font-size: 17px;
+            border: none;
+            padding: 10px 35px;
+            border-radius: 5px;
+            transition: 0.2s;
+            margin-bottom: 15px;
+        }
+        button.create:hover {
+            color: var(--black-color);
+            background-color: white;
+            box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.35) 0px 0px 0px 1px;
+            transition: 0.2s;
+        }
+        button.sign_up {
+            color: var(--black-color);
+            background-color: white;
+            border: none;
+            font-size: 17px;
+            padding: 16px 35px 10px 35px;
+            border-radius: 5px;
+            transition: 0.2s;
+            text-align: center;
+            box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.35) 0px 0px 0px 1px;
+            margin-bottom: 30px;
+        }
+        button.sign_up:hover {
+            color: var(--grey-color);
+            transition: 0.2s;
+        }
+        p.in__button {
+            margin-top: -5px;
+        }
+        span.g {
+            margin: 0 8px;
+        }
+        input {
+            border: none;
+            outline: none;
+            font-size: 17px;
+            color: var(--black-color);
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+            padding: 10px 2px;
+            margin-bottom: 25px;
+            border-radius: 2px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="top">
+            <span><i class="lab la-telegram"></i></span>
+        </div>
+
+        <div class="center">
+            <blockquote>
+                "Problems are hidden solutions."
+            </blockquote>
+        </div>
+        
+        <div class="bottom">
+            <div class="left">
+                <h3>
+                    Pavel Durov
+                </h3>
+                <h4>
+                    Telegram Founder
+                </h4>
+            </div>
+            <div class="right">
+                <button class="arrow"><span><i class="las la-angle-left"></i></span></button>
+                <button class="arrow"><span><i class="las la-angle-right"></i></span></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="form">
+        <h2>Create an account</h2>
+        <h5>Let's get started with your 30 day free trial.</h5>
+
+        <form>
+            <p>
+                <input type="text" placeholder="Name" />
+            </p>
+            <p>
+                <input type="text" placeholder="Email" />
+            </p>
+            <p>
+                <input type="password" placeholder="Password" />
+            </p>
+        </form>
+
+        <button class="create">Create account</button>
+        <button class="sign_up"><p class="in__button"><span class="g"><i class="lab la-google"></i></span>Sign up with Google</p></button>
+
+        <p class="log_in">Already have an account? <a href="">Log in</a></p>
+    </div>
+</body>
+</html>
