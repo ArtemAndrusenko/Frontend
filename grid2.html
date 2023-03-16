@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+        html,
+        body,
+        .container {
+            height: 100%;
+        }
+        .top {
+            grid-area: top;
+        }
+        .right {
+            grid-area: right;
+        }
+        .left {
+            grid-area: left;
+        }
+        .bottom {
+            grid-area: bottom;
+        }
+        .center {
+            grid-area: center;
+        } 
+        div {
+            background: rgb(45, 115, 255);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            gap: 1rem;
+            grid-template-areas: 
+                "top top top top top top top"
+                "left left center center center center right"
+                "left left center center center center right"
+                "left left center center center center right"
+                "left left center center center center right"
+                "left left bottom bottom bottom bottom bottom"
+                "left left bottom bottom bottom bottom bottom"
+            ;
+        }    
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="top"></div>
+        <div class="right"></div>
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </main>
+</body>
+</html>
