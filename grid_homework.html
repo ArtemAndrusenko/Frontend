@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Homework</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        * {
+            margin: 0;
+        }
+        :root {
+            --first-color: #6C26C8;
+            --second-color: #947BAC;
+            --third-color: #392A46;
+        }
+        html,
+        body,
+        .container {
+            height: 100%;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background: var(--first-color);
+        }
+        .header {
+            grid-area: header;
+            background: var(--first-color);
+        }
+        .banner {
+            grid-area: banner;
+            background: var(--third-color);
+        }
+        .news {
+            grid-area: news;
+            background: var(--first-color);
+        }
+        .item1 {
+            grid-area: item1;
+            background: var(--second-color);
+        }
+        .item2 {
+            grid-area: item2;
+            background: var(--third-color);
+        }
+        .item3 {
+            grid-area: item3;
+            background: var(--third-color);
+        }
+        .item4 {
+            grid-area: item4;
+            background: var(--second-color);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            grid-template-areas: 
+                "sidebar header header banner"
+                "sidebar item1 item2 news"
+                "sidebar item3 item4 news"
+            ;
+        }
+        div {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            text-align: center;
+            color: white;
+        }    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">sidebar</div>
+        <div class="header">header</div>
+        <div class="banner">banner</div>
+        <div class="news">news</div>
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+        <div class="item4">item4</div>
+    </div>
+</body>
+</html>
