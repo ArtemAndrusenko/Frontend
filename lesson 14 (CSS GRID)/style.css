@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+header{
+    height: 180px;
+    background-color: chocolate;
+}
+
+.header_wrapper{
+    height: 100%;
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: brown;
+}
+
+.cards_wrapper{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.image{
+    height: 200px;
+    background-color: orange;
+}
+
+.menu_wrapper{
+    display: flex;
+    gap: 35px;
+}
+
+footer{
+    height: 80px;
+    background-color: gray;
+}
+
+.footer_wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2, a, p{
+    font-family: 'Oswald';
+    font-size: 25px;
+    font-style: medium;
+}
+
+@media(max-width: 1000px){
+    .container{
+        max-width: 600px;
+    }
+    .cards_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 700px){
+    .container{
+        max-width: 300px;
+    }
+    .cards_wrapper{
+        grid-template-columns: 1fr;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    a{
+        font-size: 15px;
+    }
+}
