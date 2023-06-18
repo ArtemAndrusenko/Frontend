@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 header {
   height: 740px;
   background-image: url(Rectangle.png);
@@ -30,6 +31,13 @@ header {
   justify-content: center;
   text-align: center;
 }
+.left {
+  padding-right: 23px;
+}
+.right {
+  padding-left: 23px;
+}
+
 .item3{
   justify-self: start;
   background-color: white;
@@ -65,7 +73,7 @@ h2 {
 
 p.item-second-line{
   font-family: 'Oswald', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 53px;
   text-align: center;
@@ -82,6 +90,56 @@ p.item-third-line{
   color: #999999;
 }
 
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 60px;
+  color: #404149;
+  text-transform: uppercase;
+}
+
+.cards {
+  margin-bottom: 200px;
+  
+}
+
+img {
+  width: 350px;
+  height: 380px;
+}
+
+.rectangle {
+  background-color: #F7654A;
+  width: 55px;
+  height: 6px;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+h4 {
+  color: #404149;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  margin-bottom: 20px;
+}
+
+p.card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: #999999;
+}
 
 
 aside {
@@ -113,7 +171,7 @@ button {
   text-transform: uppercase;
   color: black;
   border: none;
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
@@ -129,6 +187,7 @@ button:hover {
   transition: 0.2s;
 }
 
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -139,7 +198,7 @@ footer {
 }
 
 p.footer-text {
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
