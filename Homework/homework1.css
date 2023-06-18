@@ -81,3 +81,69 @@ p.item-third-line{
   text-align: center;
   color: #999999;
 }
+
+
+
+aside {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 18%;
+  background-color: #F7654A;
+  height: 181px;
+}
+
+.aside-text {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p.aside-line-first {
+  font-size: 48px;
+  padding: 20px 0 10px;
+}
+
+p.aside-line-second {
+  font-size: 24px;
+}
+
+button {
+  background-color: white;
+  text-transform: uppercase;
+  color: black;
+  border: none;
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  padding: 13px 45px;
+  margin: 73px 0 59px;
+}
+
+button:hover {
+  color: gray;
+  background-color: lightgray;
+  transition: 0.2s;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 82px;
+  align-items: center;
+  padding: 0 18%;
+  background-color: #404149;
+}
+
+p.footer-text {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: white;
+}
