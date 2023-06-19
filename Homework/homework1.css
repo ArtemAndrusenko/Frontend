@@ -106,7 +106,15 @@ h3 {
 
 .cards {
   margin-bottom: 200px;
-  
+  margin-left: 10%;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card{
+  width: 350px;
 }
 
 img {
