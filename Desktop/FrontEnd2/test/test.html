@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя</title>
+</head>
+<body>
+    <h1>Авторизация</h1>
+  <form id="authForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <button type="submit">Войти</button>
+  </form>
+
+  <div id="userCard" style="display: none;">
+    <h2>Данные пользователя:</h2>
+    <p><strong>ID:</strong> <span id="userId"></span></p>
+    <p><strong>Name:</strong> <span id="userName"></span></p>
+    <p><strong>Username:</strong> <span id="userUsername"></span></p>
+    <p><strong>Email:</strong> <span id="userEmail"></span></p>
+    <p><strong>Phone:</strong> <span id="userPhone"></span></p>
+    <label for="userWebsite">Website:</label>
+    <input type="text" id="userWebsite">
+  </div>
+
+  <div id="errorMessage"></div>
+
+    <script src="test.js"></script>
+</body>
+</html>
